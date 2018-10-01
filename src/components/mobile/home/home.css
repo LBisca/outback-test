@@ -1,8 +1,5 @@
-.home {
-  background-color: #fff;
-}
-
 .container {
+  height: 100%;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -10,10 +7,10 @@
 .container__body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: [row1] 80px [row2] 150px;
-      grid-template-rows: [row1] 80px [row2] 150px;
+  -ms-grid-rows: [row1] 100px [row2] 220px;
+      grid-template-rows: [row1] 100px [row2] 220px;
   grid-gap: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .container__body__main {

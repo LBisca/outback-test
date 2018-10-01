@@ -18,6 +18,12 @@ const MenuCategory = () => {
             <div className="test" />
           </div>
         </div>
+        <div className="line-break" />
+
+        <div className="container__foot">
+          <div className="container__foot__research" />
+          <div className="container__foot__club" />
+        </div>
       </div>
     </div>
   );

@@ -4,9 +4,9 @@
 
   &__top {
     display: grid;
-    grid-template-rows: [row1]80px [row2]80px;
+    grid-template-rows: [row1]100px [row2]100px;
     grid-gap: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 
     &__main-menu {
       color: orangered;
@@ -18,10 +18,19 @@
 
   &__contents {
     display: grid;
-    grid-template-rows: [row1]80px [row2]80px;
+    grid-template-rows: [row1]100px [row2]100px;
     grid-template-columns: [col1]auto [col2]auto;
     grid-gap: 5px;
   }
+}
+
+.line-break {
+  height: 1px;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  background-color: orangered;
 }
 
 .test {

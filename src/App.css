@@ -47,6 +47,7 @@ html {
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   transition: 1s;
+  background-color: #fff;
 }
 
 .pt-page-1 {

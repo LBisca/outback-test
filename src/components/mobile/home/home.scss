@@ -1,0 +1,68 @@
+.home {
+  background-color: #fff;
+}
+
+.container {
+  margin-left: 5px;
+  margin-right: 5px;
+
+  &__body {
+    display: grid;
+    grid-template-rows: [row1]80px [row2]150px;
+    grid-gap: 5px;
+    margin-bottom: 5px;
+
+    &__main {
+      background-color: orangered;
+      border-radius: 7px;
+    }
+  }
+
+  &__gift {
+    display: grid;
+    grid-template-rows: [row1]100px;
+    margin-bottom: 5px;
+
+    &__contents {
+      border: 1px solid orangered;
+      border-radius: 7px;
+    }
+  }
+
+  &__foot {
+    display: grid;
+    grid-template-columns: [col1]auto [col2]auto;
+    grid-template-rows: [row1]100px;
+    grid-column-gap: 5px;
+
+    &__research {
+      border: 1px solid orangered;
+      border-radius: 7px;
+    }
+    &__club {
+      border: 1px solid orangered;
+      border-radius: 7px;
+    }
+  }
+}
+
+.drop {
+  position: relative;
+  margin-top: calc(100% + 1000px);
+}
+
+.menu {
+  display: flex;
+  background: orangered;
+  color: white;
+  top: 0;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 7px;
+
+  &__text {
+    align-items: center;
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+}

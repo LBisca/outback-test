@@ -1,0 +1,30 @@
+.container {
+  margin-left: 5px;
+  margin-right: 5px;
+
+  &__top {
+    display: grid;
+    grid-template-rows: [row1]80px [row2]80px;
+    grid-gap: 5px;
+    margin-bottom: 5px;
+
+    &__main-menu {
+      color: orangered;
+      text-transform: uppercase;
+      border: 1px solid orangered;
+      border-radius: 7px;
+    }
+  }
+
+  &__contents {
+    display: grid;
+    grid-template-rows: [row1]80px [row2]80px;
+    grid-template-columns: [col1]auto [col2]auto;
+    grid-gap: 5px;
+  }
+}
+
+.test {
+  border: 1px solid orangered;
+  border-radius: 4px;
+}

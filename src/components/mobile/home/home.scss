@@ -1,45 +1,58 @@
 .home {
+  height: calc(100% - 112px);
 }
 
 .container {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   margin-left: 5px;
   margin-right: 5px;
 
   &__body {
-    display: grid;
-    grid-template-rows: [row1]100px [row2]220px;
-    grid-gap: 5px;
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // grid-template-rows: [row1]50% [row2]50%;
+    // grid-gap: 5px;
     margin-bottom: 7px;
 
     &__main {
+      flex-grow: 1;
+      margin-top: 10px;
       background-color: orangered;
       border-radius: 7px;
     }
   }
 
   &__gift {
-    display: grid;
-    grid-template-rows: [row1]100px;
+    display: flex;
+    flex-direction: column;
+    height: 25%;
     margin-bottom: 5px;
 
     &__contents {
+      height: 100%;
       border: 1px solid orangered;
       border-radius: 7px;
     }
   }
 
   &__foot {
-    display: grid;
-    grid-template-columns: [col1]auto [col2]auto;
-    grid-template-rows: [row1]100px;
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    justify-content: space-between;
     grid-column-gap: 5px;
 
     &__research {
+      width: 100%;
       border: 1px solid orangered;
       border-radius: 7px;
     }
     &__club {
+      width: 100%;
       border: 1px solid orangered;
       border-radius: 7px;
     }
@@ -57,7 +70,7 @@
   color: white;
   top: 0;
   justify-content: center;
-  padding: 15px;
+  padding: 20px;
   border-radius: 7px;
 
   &__text {

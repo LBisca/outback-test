@@ -1,52 +1,85 @@
+.home {
+  height: calc(100% - 112px);
+}
+
 .container {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 5px;
   margin-right: 5px;
 }
 
 .container__body {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: [row1] 100px [row2] 220px;
-      grid-template-rows: [row1] 100px [row2] 220px;
-  grid-gap: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-bottom: 7px;
 }
 
 .container__body__main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 10px;
   background-color: orangered;
   border-radius: 7px;
 }
 
 .container__gift {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: [row1] 100px;
-      grid-template-rows: [row1] 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 25%;
   margin-bottom: 5px;
 }
 
 .container__gift__contents {
+  height: 100%;
   border: 1px solid orangered;
   border-radius: 7px;
 }
 
 .container__foot {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: [col1] auto [col2] auto;
-      grid-template-columns: [col1] auto [col2] auto;
-  -ms-grid-rows: [row1] 100px;
-      grid-template-rows: [row1] 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 25%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   grid-column-gap: 5px;
 }
 
 .container__foot__research {
+  width: 100%;
   border: 1px solid orangered;
   border-radius: 7px;
 }
 
 .container__foot__club {
+  width: 100%;
   border: 1px solid orangered;
   border-radius: 7px;
 }
@@ -66,7 +99,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px;
+  padding: 20px;
   border-radius: 7px;
 }
 

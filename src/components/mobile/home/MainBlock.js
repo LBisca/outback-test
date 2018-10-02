@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./style.css";
+import "./home.css";
 
 export default class MainBlock extends Component {
   render() {
